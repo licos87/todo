@@ -2,7 +2,7 @@
 
 ### Что хочу получить на выходе.
 
-> Дизайн взятый за основу
+> Дизайн взятый за основу (https://dribbble.com/shots/6978705-Kaoo-Dashboard)
 
 > Dashboard
 > ![Dashboard](https://cdn.dribbble.com/users/2356308/screenshots/6978705/kaoo_dribbble_main_1600x1200.png)
