@@ -2,37 +2,44 @@
 :root {
 	--color-background-primary: #15191f;
 	--color-background-second: #1b1e28;
+	--color-background-third: #ffffffde;
 
-	--color-button-primary: #0dbe35;
+	--color-button-primary: #0dac32;
 	--color-button-second: #153c2b;
-	--color-button-third: #403222;
+	--color-button-third: #ff1818;
 	--color-button-fourth: #403222;
 
-	--color-border-primary: #0abc30;
+	--color-border-primary: #0cad32;
 	--color-border-second: #0cad32;
 	--color-border-third: #1ac6ff;
 	--color-border-fourth: #1292bd;
 
+	--color-font-primary: #ffffffde;
+	--color-font-second: #556574;
 
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+
+	--font-family-primary: "Nunito", "Arila", sans-serif;
+
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: --color-background-primary;
+  color: var(--color-font-primary);
+  background-color: var(--color-background-primary);
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+	font-family: var(--font-family-primary);
+	font-style: normal;
+	font-weight: 400;
 }
 
 body {
   margin: 0;
   display: flex;
-  /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
+	padding: 15px;
 }
+
 

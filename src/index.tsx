@@ -1,10 +1,18 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import { StrictMode } from 'react';
+import ReactDOM from 'react-dom/client';
+import './shared/assets/normalize.css';
+import './shared/fonts/Nunito.css';
 import './index.css'
-import TasksList from './shared/ui/tasks-list/ui/tasks-list'
+import Header from './widgets/header/ui/header';
+import Dashboard from './widgets/dashboard/ui/dashboard';
 
-createRoot(document.getElementById('root')!).render(
+const root = ReactDOM.createRoot(
+	document.getElementById('root') as HTMLElement,
+);
+
+root.render(
 	<StrictMode>
-		<TasksList />
+		<Header />
+		<Dashboard />
 	</StrictMode>,
 )

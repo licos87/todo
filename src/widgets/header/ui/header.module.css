@@ -1,0 +1,32 @@
+.header {
+	display: flex;
+	width: 100%;
+	padding: 20px 40px;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.header__title__wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.header__title {
+	margin: 0;
+}
+
+.header__title__counter {
+	margin: 0;
+	color: var(--color-font-second);
+}
+
+.account {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
+.calendar {
+	font-size: 20px;
+	color: var(--color-font-second);
+}
