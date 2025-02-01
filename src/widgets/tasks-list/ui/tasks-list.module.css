@@ -1,0 +1,17 @@
+.list {
+	width: inherit;
+}
+
+.listWrap {
+	max-height: 87vh;
+	width: fit-content;
+	max-width: 80vw;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 30px;
+	flex: 0;
+	padding: 20px;
+	list-style-type: none;
+}
