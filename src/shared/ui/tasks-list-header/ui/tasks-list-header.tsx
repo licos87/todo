@@ -20,15 +20,15 @@ function TasksListHeader({ count }: TasksListHeaderProps) {
 	}
 
 	return (
-		<section className={styles.tasks_list__header}>
-			<div className={styles.tasks_list__header__title_wrapper}>
-				<h2 className={styles.tasks_list__header__title}>{listName}</h2>
-				<p className={styles.tasks_list__header__counter}>
+		<section className={styles.header}>
+			<div className={styles.header__titleWrapper}>
+				<h2 className={styles.header__title}>{listName}</h2>
+				<p className={styles.header__counter}>
 					{responseDependsCount(count)}
 				</p>
 			</div>
 			<button className={styles.addTask}>
-				<span>Новая задача</span>
+				<span className={styles.addTask__text}>Новая задача</span>
 			</button>
 		</section>
 	)

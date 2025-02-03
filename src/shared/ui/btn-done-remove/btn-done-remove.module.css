@@ -1,0 +1,31 @@
+.btn {
+	width: 30px;
+	height: 30px;
+	padding-top: 5px;
+	background-color: inherit;
+	border: none;
+	cursor: pointer;
+}
+
+.btn_done {
+	& svg {
+		transition: transform 0.5s, fill 0.5s;
+	}
+
+	&:hover svg {
+		fill: var(--color-button-primary);
+		transform: scale(1.1);
+		transition: transform 0.5s, fill 0.5s;
+	}
+}
+.btn_remove {
+	& svg {
+		transition: transform 0.5s, stroke 0.5s;
+	}
+
+	&:hover svg {
+		stroke: var(--color-button-third);
+		transform: scale(1.1);
+		transition: transform 0.5s, stroke 0.5s;
+	}
+}

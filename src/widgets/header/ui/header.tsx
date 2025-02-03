@@ -6,7 +6,9 @@ function Header() {
 		<section className={styles.header}>
 			<div className={styles.account}>
 				<span className={styles.calendar}>1 Февраля 2025</span>
-				<img src='../src/shared/assets/image/icon.svg' />
+				<a className={styles.profileLink}>
+					<img src='../src/shared/assets/image/icon.svg' />
+				</a>
 			</div>
 		</section>
 	)

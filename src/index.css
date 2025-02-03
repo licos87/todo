@@ -1,27 +1,28 @@
 
 :root {
-	--color-background-primary: #15191f;
-	--color-background-second: #1b1e28;
-	--color-background-third: #ffffffde;
+	--color-background-primary: #15191F;
+	--color-background-second: #1B1E28;
+	--color-background-third: #FFFFFFDE;
+	--color-background-fourth: #232631;
+	--color-background-five: #556574;
+;
 
-	--color-button-primary: #0dac32;
-	--color-button-second: #153c2b;
-	--color-button-third: #ff1818;
-	--color-button-fourth: #403222;
+	--color-button-primary: #0DAC32;
+	--color-button-second: #153C2B;
+	--color-button-third: #FF1818;
 
-	--color-border-primary: #0cad32;
-	--color-border-second: #0cad32;
-	--color-border-third: #1ac6ff;
-	--color-border-fourth: #1292bd;
+	--color-border-primary: #0DAC32;
+	--color-border-second: #1AC6FF;
+	--color-border-fourth: #1292BD;
 
-	--color-font-primary: #ffffffde;
+	--color-font-primary: #FFFFFFDE;
 	--color-font-second: #556574;
 
 
 	--font-family-primary: "Nunito", "Arila", sans-serif;
 
 
-  color-scheme: light dark;
+  /* color-scheme: light dark; */
   color: var(--color-font-primary);
   background-color: var(--color-background-primary);
 
@@ -32,6 +33,7 @@
 	font-family: var(--font-family-primary);
 	font-style: normal;
 	font-weight: 400;
+
 }
 
 body {
@@ -39,7 +41,6 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
-	padding: 15px;
 }
 
 
