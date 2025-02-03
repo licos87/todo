@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './shared/assets/normalize.css';
 import './shared/fonts/Nunito.css';
 import './index.css'
-import Header from './widgets/header/ui/header';
-import Dashboard from './widgets/dashboard/ui/dashboard';
+import App from './app/ui/app';
 
 const root = ReactDOM.createRoot(
 	document.getElementById('root') as HTMLElement,
@@ -12,7 +11,6 @@ const root = ReactDOM.createRoot(
 
 root.render(
 	<StrictMode>
-		<Header />
-		<Dashboard />
+		<App />
 	</StrictMode>,
 )
