@@ -51,7 +51,13 @@
 	cursor: pointer;
 	transition: transform 0.4s;
 
-	&:hover {
+	& svg {
+		opacity: 0.5;
+		transition: transform 0.3s;
+	}
+
+	&:hover svg {
+		opacity: 1;
 		transform: scale(1.1);
 		transition: transform 0.3s;
 	}
@@ -61,6 +67,10 @@
 	transition: transform 0.4s;
 	animation: rotate ease-in 1s ;
 	transform: rotate(180deg);
+
+	& svg {
+		opacity: 1;
+	}
 }
 
 .descriptionText {
@@ -79,28 +89,4 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-}
-
-.footerBtn {
-	width: 30px;
-	height: 30px;
-	background-color: inherit;
-	border: none;
-	cursor: pointer;
-}
-
-.footerBtn_done {
-	&:hover svg {
-		fill: var(--color-button-primary);
-		transform: scale(1.1);
-		transition: transform 0.3s;
-	}
-
-}
-.footerBtn_remove {
-	&:hover svg {
-		stroke: var(--color-button-third);
-		transform: scale(1.1);
-		transition: transform 0.3s;
-	}
 }

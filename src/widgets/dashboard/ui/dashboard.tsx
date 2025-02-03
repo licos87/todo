@@ -1,4 +1,5 @@
 import TasksListHeader from "../../../shared/ui/tasks-list-header/ui/tasks-list-header";
+import Header from "../../header/ui/header";
 import TasksList from "../../tasks-list/ui/tasks-list";
 import styles from './dashboard.module.css'
 
@@ -92,6 +93,7 @@ function Dashboard() {
 	]
 	return (
 		<section className={styles.dashboard}>
+			<Header />
 			<TasksListHeader count={taskList.length} />
 			<TasksList taskList={taskList} />
 		</section>

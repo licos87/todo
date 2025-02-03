@@ -1,23 +1,23 @@
-.tasks_list__header {
+.header {
 	display: flex;
 	width: 80vw;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.tasks_list__header__title_wrapper {
+.header__titleWrapper {
 	margin-left: 115px;
 	display: flex;
 	flex-direction: column;
 }
 
-.tasks_list__header__title {
+.header__title {
 	margin: 0;
 	font-size: 40px;
 	font-weight: 800;
 }
 
-.tasks_list__header__counter {
+.header__counter {
 	align-self: flex-end;
 	margin: 0;
 	color: var(--color-font-second);
@@ -56,6 +56,8 @@
 	height: 14px;
 	width: 2px;
 	background-color: var(--color-background-third);
-
 }
 
+.addTask__text {
+	color : var(--color-font-primary)
+}
