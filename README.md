@@ -10,9 +10,6 @@
 > Animation
 > <video controls src="https://cdn.dribbble.com/users/2356308/screenshots/7068990/media/be573c3f5228319c7066e86d3962124e.mp4" title="https://cdn.dribbble.com/users/2356308/screenshots/7068990/media/be573c3f5228319c7066e86d3962124e.mp4"></video>
 
-- Поля:
-  - Active;
-  - Completed;
 - Должен быть календарь;
 - Drag&Drop;
 - Исполнено на React;
