@@ -1,17 +1,26 @@
-.list {
-	width: inherit;
+.listWrap {
+	position: relative;
 }
 
-.listWrap {
-	max-height: 84vh;
+.list {
 	width: fit-content;
-	max-width: 80vw;
+	max-height: 80vh;
 	display: flex;
 	align-items: flex-start;
-	flex-direction: column;
+	justify-content: center;
 	flex-wrap: wrap;
 	gap: 30px;
-	flex: 0;
 	padding: 20px;
 	list-style-type: none;
+	overflow: auto;
+}
+
+.list::-webkit-scrollbar {
+	border-radius: 10px;
+	background-color: var(--color-background-second);
+}
+
+.list::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: var(--color-background-fourth);
 }

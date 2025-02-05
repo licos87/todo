@@ -8,10 +8,11 @@ type TasksListProps = {
 
 function TasksList({ taskList }: TasksListProps) {
 	return (
-		<section className={styles.list}>
-			<ul className={styles.listWrap}>
+		<section className={styles.listWrap}>
+			<ul className={styles.list}>
 				{taskList.map((task) => <li key={task.id}><Task title={task.title} descriptions={task.descriptions} dateStart={task.dateStart} dateEnd={task.dateEnd} /></li>)}
 			</ul>
+			<div className={styles.rightFakeLine}></div>
 		</section >
 	)
 }
