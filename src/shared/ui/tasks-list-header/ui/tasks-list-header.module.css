@@ -1,11 +1,12 @@
 .header {
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 30px;
 }
 
 .header__titleWrapper {
-	margin-left: 115px;
 	display: flex;
 	flex-direction: column;
 }

@@ -10,6 +10,7 @@
 	background-color: var(--color-background-fourth);
 	opacity: 0.5;
 	transition: opacity 0.3s;
+	gap: 5px;
 
 	&:hover {
 		opacity: 0.85;
@@ -53,6 +54,8 @@
 }
 
 .taskListName {
+	margin: 0;
+	text-align: center;
 	position: relative;
 	font-size: 18px;
 	width: 100px;
@@ -71,8 +74,8 @@
 		position: absolute;
 		top: 12px;
 		right: -40px;
-		width: 4px;
-		height: 4px;
+		width: 5px;
+		height: 5px;
 		border-radius: 50%;
 		background-color: var(--color-background-five);
 	}
@@ -81,8 +84,8 @@
 		position: absolute;
 		top: 19px;
 		right: -40px;
-		width: 4px;
-		height: 4px;
+		width: 5px;
+		height: 5px;
 		border-radius: 50%;
 		background-color: var(--color-background-five);
 	}
@@ -92,8 +95,8 @@
 		position: absolute;
 		top: 6px;
 		right: -40px;
-		width: 4px;
-		height: 4px;
+		width: 5px;
+		height: 5px;
 		border-radius: 50%;
 		background-color: var(--color-background-five);
 	}

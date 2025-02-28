@@ -1,0 +1,137 @@
+{
+	"users": [
+		{
+			"id": "1",
+			"email": "tester1@mail.ru",
+			"password": "1234567890",
+			"name": "Сергей",
+			"tasksLists": [
+				{
+					"id": "1",
+					"listTitle": "Работа",
+					"colorTheme": "green",
+					"tasks": [
+						{
+							"id": "1",
+							"taskTitle": "Доделать проект",
+							"taskDescription": "Нужно доделать проект, и разобраться в технологиях.",
+							"taskEntryDate": "12.03.2025",
+							"taskEndDate": "14.04.2025"
+						},
+						{
+							"id": "2",
+							"taskTitle": "Доделать проект",
+							"taskDescription": "Нужно доделать проект, и разобраться в технологиях.",
+							"taskEntryDate": "12.03.2025",
+							"taskEndDate": "14.04.2025"
+						}
+					]
+				},
+				{
+					"id": "2",
+					"listTitle": "Home work",
+					"colorTheme": "blue",
+					"tasks": [
+						{
+							"id": "3",
+							"taskTitle": "Обновить проект",
+							"taskDescription": "Нужно доделать проект, и разобраться в технологиях.",
+							"taskEntryDate": "12.03.2025",
+							"taskEndDate": "14.04.2025"
+						},
+						{
+							"id": "4",
+							"taskTitle": "Записать проект",
+							"taskDescription": "Нужно доделать проект, и разобраться в технологиях.",
+							"taskEntryDate": "12.03.2025",
+							"taskEndDate": "14.04.2025"
+						},
+						{
+							"id": "5",
+							"taskTitle": "Редактировать проект",
+							"taskDescription": "Нужно доделать проект, и разобраться в технологиях.",
+							"taskEntryDate": "12.03.2025",
+							"taskEndDate": "14.04.2025"
+						},
+						{
+							"id": "6",
+							"taskTitle": "Обработать проект",
+							"taskDescription": "Нужно доделать проект, и разобраться в технологиях.",
+							"taskEntryDate": "12.03.2025",
+							"taskEndDate": "14.04.2025"
+						},
+						{
+							"id": "7",
+							"taskTitle": "Обработать проект",
+							"taskDescription": "Нужно доделать проект, и разобраться в технологиях.",
+							"taskEntryDate": "12.03.2025",
+							"taskEndDate": "14.04.2025"
+						},
+						{
+							"id": "8",
+							"taskTitle": "Обработать проект",
+							"taskDescription": "Нужно доделать проект, и разобраться в технологиях.",
+							"taskEntryDate": "12.03.2025",
+							"taskEndDate": "14.04.2025"
+						},
+						{
+							"id": "9",
+							"taskTitle": "Обработать проект",
+							"taskDescription": "Нужно доделать проект, и разобраться в технологиях.",
+							"taskEntryDate": "12.03.2025",
+							"taskEndDate": "14.04.2025"
+						},
+						{
+							"id": "10",
+							"taskTitle": "Обработать проект",
+							"taskDescription": "Нужно доделать проект, и разобраться в технологиях.",
+							"taskEntryDate": "12.03.2025",
+							"taskEndDate": "14.04.2025"
+						},
+						{
+							"id": "11",
+							"taskTitle": "Обработать проект",
+							"taskDescription": "Нужно доделать проект, и разобраться в технологиях.",
+							"taskEntryDate": "12.03.2025",
+							"taskEndDate": "14.04.2025"
+						},
+						{
+							"id": "12",
+							"taskTitle": "Обработать проект",
+							"taskDescription": "Нужно доделать проект, и разобраться в технологиях.",
+							"taskEntryDate": "12.03.2025",
+							"taskEndDate": "14.04.2025"
+						},
+						{
+							"id": "13",
+							"taskTitle": "Обработать проект",
+							"taskDescription": "Нужно доделать проект, и разобраться в технологиях.",
+							"taskEntryDate": "12.03.2025",
+							"taskEndDate": "14.04.2025"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "2",
+			"email": "tester2@mail.ru",
+			"password": "1234567890",
+			"name": "Пётр",
+			"tasksLists": [
+				{
+					"listTitle": "Работа",
+					"colorTheme": "green",
+					"tasks": [
+						{
+							"taskTitle": "Доделать проект",
+							"taskDescription": "Нужно доделать проект, и разобраться в технологиях.",
+							"taskEntryDate": "12.03.2025",
+							"taskEndDate": "14.04.2025"
+						}
+					]
+				}
+			]
+		}
+	]
+}

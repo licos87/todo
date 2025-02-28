@@ -7,7 +7,8 @@ function Header() {
 			<div className={styles.account}>
 				<span className={styles.calendar}>1 Февраля 2025</span>
 				<a className={styles.profileLink}>
-					<img src='../src/shared/assets/image/icon.svg' />
+					<span className={styles.user}>Tester</span>
+					<img src='../src/shared/assets/image/user.svg' width='24' height='24' />
 				</a>
 			</div>
 		</section>

@@ -4,11 +4,12 @@ import styles from './task-list-name.module.css'
 type TaskListButtonProps = {
 	name: string;
 	btnColorTheme: 'green' | 'blue';
+	count: number;
 	isActive: boolean;
 	activeTaskListHendler: (name: string) => void;
 }
 
-function TaskListName({ name, btnColorTheme, isActive, activeTaskListHendler }: TaskListButtonProps) {
+function TaskListName({ name, btnColorTheme, count, isActive, activeTaskListHendler }: TaskListButtonProps) {
 
 	let btn = styles.btn;
 	let taskCount = styles.tasksCount;
@@ -29,8 +30,8 @@ function TaskListName({ name, btnColorTheme, isActive, activeTaskListHendler }: 
 
 	return (
 		<div className={btn} onClick={() => activeTaskListHendler(name)}>
-			<span className={styles.taskListName}>{name}</span>
-			<span className={taskCount}><span></span>12</span>
+			<h4 className={styles.taskListName}>{name}</h4>
+			<span className={taskCount}><span></span>{count}</span>
 			<BtnDoneRemove type='remove' />
 		</div>
 	)

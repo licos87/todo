@@ -1,6 +1,7 @@
 .header {
+	align-self: flex-end;
 	display: flex;
-	padding: 20px 40px;
+	padding: 10px 40px;
 	justify-content: flex-end;
 	align-items: center;
 }
@@ -31,6 +32,10 @@
 }
 
 .profileLink {
+	display: flex;
+	align-items: center;
+	color: var(--color-font-second);
+	gap: 10px;
 	transition: transform 0.3s;
 
 	&:hover {

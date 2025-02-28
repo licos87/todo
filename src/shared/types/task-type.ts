@@ -1,9 +1,7 @@
-type TaskType = {
+export type TaskType = {
   id: string;
-  title: string;
-  descriptions: string;
-  dateStart: string;
-  dateEnd: string;
+  taskTitle: string;
+  taskDescription: string;
+  taskEntryDate: string;
+  taskEndDate: string;
 };
-
-export default TaskType;

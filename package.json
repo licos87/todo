@@ -5,22 +5,36 @@
 	"type": "module",
 	"author": "llSergey",
 	"scripts": {
-		"start": "vite",
+		"start": "concurrently \"vite\" \"json-server -w ./server/db.json --port 3000\"",
 		"build": "tsc -b && vite build",
 		"lint": "eslint .",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"server": "json-server -w ./server/db.json"
 	},
 	"dependencies": {
+		"@reduxjs/toolkit": "2.6.0",
+		"axios": "1.7.9",
+		"classnames": "2.5.1",
+		"dayjs": "1.11.13",
+		"json-server": "1.0.0-beta.3",
 		"react": "18.3.1",
-		"react-dom": "18.3.1"
+		"react-dom": "18.3.1",
+		"react-redux": "9.2.0",
+		"react-toastify": "11.0.3",
+		"uuid": "11.0.5"
 	},
 	"devDependencies": {
 		"@eslint/js": "9.17.0",
+		"@types/json-server": "0.14.7",
 		"@types/react": "18.3.18",
 		"@types/react-dom": "18.3.5",
+		"@types/react-redux": "7.1.34",
+		"@typescript-eslint/eslint-plugin": "8.24.1",
+		"@typescript-eslint/parser": "8.24.1",
 		"@vitejs/plugin-react": "4.3.4",
-		"classnames": "2.5.1",
+		"concurrently": "9.1.2",
 		"eslint": "9.17.0",
+		"eslint-config-htmlacademy": "10.0.1",
 		"eslint-plugin-react-hooks": "5.0.0",
 		"eslint-plugin-react-refresh": "0.4.16",
 		"globals": "15.14.0",
