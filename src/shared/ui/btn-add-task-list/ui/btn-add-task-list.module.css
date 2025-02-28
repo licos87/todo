@@ -1,6 +1,6 @@
 .btn {
 	position: relative;
-	padding: 10px 15px;
+	padding: 15px;
 	text-align: center;
 	border-radius: 10px;
 	border: none;
@@ -24,7 +24,7 @@
 		position: absolute;
 		width: 23px;
 		height: 23px;
-		top: 9px;
+		top: 14px;
 		left: 18px;
 		background: no-repeat center center url(../../../assets/image/add-task-list.svg);
 	}

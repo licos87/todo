@@ -1,40 +1,29 @@
-import { useState } from 'react'
 import TaskListName from '../../../entities/task-list-name/ui/task-list-name'
-import TaskListNameType from '../../../shared/types/task-list-name'
 import styles from './tasks-lists.module.css'
 import BtnAddTaskList from '../../../shared/ui/btn-add-task-list/ui/btn-add-task-list'
+import { useAppDispatch, useAppSelector } from '../../../shared/lib/hooks'
+import { selectLoadUserData } from '../../../app/store/selects/select-load-userData'
+import { TasksListsType } from '../../../shared/types/tasks-lists-type'
+import { changeActiveTaskList } from '../../../app/store/actions/actions'
+import { selectLoadActiveTasksList } from '../../../app/store/selects/select-load-active-tasks-list'
 
 function TasksLists() {
-	const mockTaskListNamesList: TaskListNameType[] = [
-		{
-			id: crypto.randomUUID(),
-			name: 'Работа',
-			colorTheme: 'blue',
-		},
-		{
-			id: crypto.randomUUID(),
-			name: 'Проект',
-			colorTheme: 'green',
-		},
-		{
-			id: crypto.randomUUID(),
-			name: 'Список покупок',
-			colorTheme: 'green',
-		},
-	]
-
-	const [isActive, setIsActive] = useState('');
+	const dispatch = useAppDispatch();
+	const activeTaskList = useAppSelector(selectLoadActiveTasksList);
 	function activeTaskListHendler(name: string) {
-		setIsActive(name)
+		dispatch(changeActiveTaskList(name))
 	}
+
+	const userData = useAppSelector(selectLoadUserData);
+	const taskLists = userData?.tasksLists
 	return (
 		<section className={styles.dropdown}>
 			<h3 className={styles.title}>Список задач</h3>
 			<ul className={styles.list}>
 				{
-					mockTaskListNamesList.map((item) =>
+					taskLists && taskLists.map((item: TasksListsType) =>
 						<li key={item.id} >
-							<TaskListName name={item.name} btnColorTheme={item.colorTheme} isActive={isActive === item.name} activeTaskListHendler={activeTaskListHendler} />
+							<TaskListName name={item.listTitle} btnColorTheme={item.colorTheme} count={item.tasks.length} isActive={activeTaskList === item.listTitle} activeTaskListHendler={activeTaskListHendler} />
 						</li>
 					)
 				}
